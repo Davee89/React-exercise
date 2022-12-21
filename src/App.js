@@ -1,6 +1,6 @@
 import DisplayExpenses from "./components/Expenses/DisplayExpenses.js";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -28,6 +28,6 @@ function App() {
       <DisplayExpenses title={expenses.map((expense) => expense.title)} amount={expenses.map((expense) => expense.amount)} date={expenses.map((expense) => expense.date)} />
     </div>
   );
-}
+};
 
 export default App;
