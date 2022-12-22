@@ -1,4 +1,5 @@
 import DisplayExpenses from "./components/Expenses/DisplayExpenses.js";
+import NewExpense from "./components/NewExpense/NewExpense.js";
 
 const App = () => {
   const expenses = [
@@ -24,7 +25,7 @@ const App = () => {
   ];
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense></NewExpense>
       <DisplayExpenses title={expenses.map((expense) => expense.title)} amount={expenses.map((expense) => expense.amount)} date={expenses.map((expense) => expense.date)} />
     </div>
   );
