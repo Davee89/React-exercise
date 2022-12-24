@@ -14,3 +14,5 @@ const DisplayExpenses = (props) => {
 };
 
 export default DisplayExpenses;
+
+const repeat = "YOU NEED TO REPEAT THE COURSE...";
