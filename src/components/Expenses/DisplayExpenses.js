@@ -5,14 +5,12 @@ import Card from "../UI/Card.js";
 const DisplayExpenses = (props) => {
   return (
     <Card className="expenses">
-      <ExpenseItem title={props.title[0]} amount={props.amount[0]} date={props.date[0]}></ExpenseItem>
-      <ExpenseItem title={props.title[1]} amount={props.amount[1]} date={props.date[1]}></ExpenseItem>
-      <ExpenseItem title={props.title[2]} amount={props.amount[2]} date={props.date[2]}></ExpenseItem>
-      <ExpenseItem title={props.title[3]} amount={props.amount[3]} date={props.date[3]}></ExpenseItem>
+      <ExpenseItem title={props.item[0].title} amount={props.item[0].amount} date={props.item[0].date}></ExpenseItem>
+      <ExpenseItem title={props.item[1].title} amount={props.item[1].amount} date={props.item[1].date}></ExpenseItem>
+      <ExpenseItem title={props.item[2].title} amount={props.item[2].amount} date={props.item[2].date}></ExpenseItem>
+      <ExpenseItem title={props.item[3].title} amount={props.item[3].amount} date={props.item[3].date}></ExpenseItem>
     </Card>
   );
 };
 
 export default DisplayExpenses;
-
-const repeat = "YOU NEED TO REPEAT THE COURSE...";

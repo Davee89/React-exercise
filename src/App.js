@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
-      <DisplayExpenses title={expenses.map((expense) => expense.title)} amount={expenses.map((expense) => expense.amount)} date={expenses.map((expense) => expense.date)} />
+      <DisplayExpenses item={expenses} />
     </div>
   );
 };
